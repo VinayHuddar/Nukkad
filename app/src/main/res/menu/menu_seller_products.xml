@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nukkad.androidapp.View.SellerAccount.ProductsListing.SellerProductsActivity">
+    <item android:id="@+id/ProductsFilter"
+        android:icon="@drawable/filter"
+        android:title="@string/products_filter"
+        app:showAsAction="always" />
+</menu>

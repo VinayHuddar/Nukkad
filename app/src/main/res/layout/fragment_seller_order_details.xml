@@ -1,0 +1,169 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nukkad.androidapp.View.SellerAccount.OrderDetails.OrderDetailsActivity">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_details_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_subhead_material" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice_num_label"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black" />
+            <TextView android:id="@+id/InvoiceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_id_label"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black" />
+            <TextView android:id="@+id/OrderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_added_label"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black" />
+            <TextView android:id="@+id/DateAdded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/payment_method_label"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black" />
+            <TextView android:id="@+id/PaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_method_label"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/black" />
+            <TextView android:id="@+id/DeliveryMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_address_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_subhead_material"
+            android:layout_marginTop="20dp"/>
+        <TextView android:id="@+id/DeliveryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_address"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/products_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_subhead_material"
+            android:layout_marginTop="20dp"/>
+        <ListView android:id="@+id/ProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightest_grey"
+            android:divider="@color/light_grey"
+            android:dividerHeight="1dp"/>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="13">
+                <TextView android:id="@+id/SubmitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_button"
+                    android:background="@color/light_grey"
+                    android:textColor="@color/black"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp">
+                <TextView android:id="@+id/TotalAllProducts"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/abc_text_size_subhead_material"
+                    android:textColor="@color/purple_blue" />
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_all_products_label"
+                    android:textSize="@dimen/abc_text_size_subhead_material"
+                    android:textColor="@color/purple_blue" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

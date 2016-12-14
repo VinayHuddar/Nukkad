@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/Review"
+    android:layout_margin="16dp"
+    android:padding="10dp">
+
+    <TextView android:id="@+id/by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="by "
+        android:textSize="@dimen/abc_text_size_small_material"/>
+
+    <TextView android:id="@+id/ReviewerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/by"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+    <TextView android:id="@+id/ReviewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout android:id="@+id/Rating"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/by">
+        <ImageView android:id="@+id/Star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"/>
+        <ImageView android:id="@+id/Star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"/>
+        <ImageView android:id="@+id/Star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"/>
+        <ImageView android:id="@+id/Star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"/>
+        <ImageView android:id="@+id/Star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/ReviewComment"
+        android:layout_below="@id/Rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_small_material" />
+
+</RelativeLayout>

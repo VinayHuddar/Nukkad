@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:id="@+id/FilterDrawer"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_products_filter_sort_label"
+            android:textSize="@dimen/abc_text_size_subhead_material"
+            android:textColor="@color/purple_blue"
+            android:background="@color/purple_blue_lightest"
+            android:padding="10dp"/>
+        <ListView android:id="@+id/SortFieldList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:choiceMode="singleChoice">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_products_filter_filter_label"
+            android:textSize="@dimen/abc_text_size_subhead_material"
+            android:textColor="@color/purple_blue"
+            android:background="@color/purple_blue_lightest"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_products_filter_status_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"/>
+        <ListView android:id="@+id/StatusFilterList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_products_filter_price_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:background="@color/white"
+            android:paddingTop="20dp"
+            android:paddingLeft="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView android:id="@+id/PriceRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <com.nukkad.androidapp.Utilities.RangeSeekBar
+                android:id="@+id/PriceSeekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PriceRange"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_products_filter_sales_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:background="@color/white"
+            android:paddingLeft="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView android:id="@+id/SalesRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <com.nukkad.androidapp.Utilities.RangeSeekBar
+                android:id="@+id/SalesSeekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SalesRange"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller_products_filter_earnings_label"
+            android:textColor="@color/purple_blue"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:background="@color/white"
+            android:paddingLeft="10dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <TextView android:id="@+id/EarningsRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <com.nukkad.androidapp.Utilities.RangeSeekBar
+                android:id="@+id/EarningsSeekbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EarningsRange"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nukkad.androidapp.View.SellerAccount.OrderDetails.OrderDetailsActivity"
+    android:id="@+id/SellerOrderHistoryScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_status_label"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textColor="@color/purple_blue"/>
+            <Spinner android:id="@+id/OrderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_marginLeft="30dp">
+            </Spinner>
+        </LinearLayout>
+
+        <CheckedTextView android:id="@+id/Notify_Customer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/notify_customer_label"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textColor="@color/purple_blue"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"/>
+
+        <CheckedTextView android:id="@+id/Notify_Admin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/notify_admin_label"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textColor="@color/purple_blue"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comment_label"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:textColor="@color/purple_blue" />
+        <EditText android:id="@+id/SellerComments"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:singleLine="false"
+            android:layout_marginTop="5dp"
+            android:padding="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView android:id="@+id/AddHistoryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/add_history_button_label"
+                android:background="@color/light_grey"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_history_label"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="@color/purple_blue"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <ListView android:id="@+id/OrderHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_grey"
+            android:dividerHeight="1dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

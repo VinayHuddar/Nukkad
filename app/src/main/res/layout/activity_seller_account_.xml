@@ -1,0 +1,96 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.nukkad.androidapp.View.SellerAccount.SellerAccountActivity">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            layout="@layout/toolbar_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.nukkad.androidapp.View.UserAccount.UserProfileFragment">
+
+            <include layout="@layout/layout_loading_message" android:id="@+id/loading_message"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout android:id="@+id/InputButtons"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white"
+                    android:layout_margin="5dp">
+
+                    <TextView android:id="@+id/AddProduct"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Add Product"
+                        android:textSize="@dimen/abc_text_size_subhead_material"
+                        android:textColor="@color/white"
+                        android:background="@drawable/round_corner_light_blue_box"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="20dp"/>
+
+                    <TextView android:id="@+id/AskAdmin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ask Admin"
+                        android:textSize="@dimen/abc_text_size_subhead_material"
+                        android:textColor="@color/white"
+                        android:background="@drawable/round_corner_light_blue_box"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:padding="20dp"/>
+                </LinearLayout>
+
+                <GridView android:id="@+id/SellerAccountFields"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"
+                    android:verticalSpacing="16dp"
+                    android:horizontalSpacing="16dp"
+                    android:layout_margin="10dp"
+                    android:layout_above="@id/InputButtons"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <com.nukkad.androidapp.View.Common.ScrimInsetsFrameLayout
+        android:id="@+id/scrimInsetsFrameLayout"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:insetForeground="#4000"
+        android:elevation="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <fragment
+            android:id="@+id/fragment_drawer"
+            android:name="com.nukkad.androidapp.View.Common.NavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout="@layout/fragment_navigation_drawer"/>
+    </com.nukkad.androidapp.View.Common.ScrimInsetsFrameLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp">
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/AddToWishList_DetailView"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" Add To Wishlist"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="@dimen/abc_text_size_subhead_material"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <ImageView android:id="@+id/AddToWishListImage_DetailView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/wishlist_32"
+                android:scaleType="center"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <View style="@style/VerticalDivider"/>
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/Share_DetailView"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:clickable="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="@dimen/abc_text_size_subhead_material"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share_icon"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <View style="@style/VerticalDivider"/>
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:clickable="true">
+            <TextView android:id="@+id/Reviews_DetailView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews / Ratings"
+                android:textSize="@dimen/abc_text_size_subhead_material"
+                android:textColor="@android:color/secondary_text_light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:src="@drawable/rating_image"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

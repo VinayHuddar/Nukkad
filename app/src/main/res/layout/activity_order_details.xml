@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nukkad.androidapp.View.SellerAccount.OrderDetails.OrderDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_loading_message" android:id="@+id/loading_message"/>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.nukkad.androidapp.View.Common.SlidingTabLayout
+                android:id="@+id/SlidingTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/OrderDetailsPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

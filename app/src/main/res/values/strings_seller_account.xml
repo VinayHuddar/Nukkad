@@ -1,0 +1,54 @@
+<resources>
+    <string name="seller_total_orders">Total Orders</string>
+    <string name="seller_total_sales">Total Sales</string>
+
+    <string name="order_information_heading">Order Information</string>
+    <string name="order_details_label">Order Details</string>
+    <string name="invoice_num_label">Invoice No: </string>
+    <string name="order_id_label">Order Id: </string>
+    <string name="date_added_label">Date Added: </string>
+    <string name="payment_method_label">Payment Method: </string>
+    <string name="delivery_method_label">Delivery Method: </string>
+
+    <string name="delivery_address_label">Delivery Address</string>
+    <string name="products_label">Products</string>
+    <string name="order_status_label">Order Status</string>
+    <string name="notify_customer_label">Notify Customer</string>
+    <string name="notify_admin_label">Notify Admin</string>
+    <string name="comment_label">Comment</string>
+    <string name="order_history_label">Order History</string>
+
+    <string name="product_quantity_label">Qty: </string>
+    <string name="transaction_status_label">Transaction Status: </string>
+    <string name="tracking_number_label">Tracking Number: </string>
+    <string name="tracking_number_hint">Enter Number</string>
+    <string name="unit_price_label">Price: </string>
+    <string name="total_label">Total: </string>
+    <string name="total_all_products_label">Total: </string>
+    <string name="submit_button">Submit</string>
+    <string name="add_history_button_label">Add History</string>
+    <string name="order_history_table_date">Date Added: </string>
+    <string name="order_history_table_comment">Comments: </string>
+    <string name="order_history_table_status">Status: </string>
+
+    <string name="product_quantity_label_list_view">Quantity: </string>
+    <string name="product_status_label">Status: </string>
+    <string name="product_quantity_sold">Sold: </string>
+    <string name="product_earned_label">Earned: </string>
+    <string name="products_filter">Products Filter</string>
+
+    <string name="orders_filter_sort_label">Sort By</string>
+    <string name="orders_filter_filter_label">Filter By</string>
+    <string name="orders_filter_status_label">Order Status</string>
+    <string name="orders_filter_date_added_label">Date Added</string>
+    <string name="orders_filter_total_label">Total</string>
+
+    <string name="seller_products_filter_sort_label">Sort By</string>
+    <string name="seller_products_filter_filter_label">Filter By</string>
+    <string name="seller_products_filter_status_label">Product Status</string>
+    <string name="seller_products_filter_price_label">Price</string>
+    <string name="seller_products_filter_quantity_label">Quantity</string>
+    <string name="seller_products_filter_sales_label">Sales</string>
+    <string name="seller_products_filter_earnings_label">Earned</string>
+    <string name="seller_products_filter_date_label">Date Added</string>
+</resources>

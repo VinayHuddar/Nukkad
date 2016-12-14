@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="seller_rating_label">Rating: </string>
+    <string name="loading_message_seller_info">Loading Seller Info...</string>
+</resources>

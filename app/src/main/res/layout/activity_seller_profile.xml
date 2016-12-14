@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nukkad.androidapp.View.SellerProfile.SellerProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:id="@+id/SellerProfileScrollView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_loading_message" android:id="@+id/loading_message"/>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProductList">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView android:id="@+id/SellerCompanyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"/>
+
+                <ImageView android:id="@+id/SellerImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView android:id="@+id/SellerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SellerCompanyImage"
+                    android:layout_toRightOf="@id/SellerImage"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/abc_text_size_small_material"
+                    android:textColor="@color/black" />
+
+                <TextView android:id="@+id/SellerAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SellerName"
+                    android:layout_toRightOf="@id/SellerImage"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seller_about"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"/>
+
+            <TextView android:id="@+id/AboutSeller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/abc_text_size_small_material"
+                android:autoLink="web" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"/>
+
+            <com.nukkad.androidapp.View.Common.SlidingTabLayout
+                android:id="@+id/SlidingTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/SellerInfoPager"
+                android:layout_width="match_parent"
+                android:layout_height="480dp">
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

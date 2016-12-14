@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nukkad.androidapp.LandingActivity"
+    android:orientation="vertical"
+    android:background="@drawable/loading_screen_img">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="top|center_horizontal"
+        android:text="NUKKAD"
+        android:textColor="@color/primary_color_dark"
+        android:textSize="@dimen/abc_text_size_display_2_material"
+        android:textStyle="bold"/>
+
+    <Button android:id="@+id/BuySell"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_corner_transparent_box"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="BUY / SELL"
+        android:textSize="@dimen/abc_text_size_large_material"/>
+
+    <Button android:id="@+id/ShareExchange"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/round_corner_transparent_box"
+        android:textColor="@color/burgundy_lighter"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="SHARE / EXCHANGE"
+        android:textSize="@dimen/abc_text_size_large_material"/>
+
+    <com.digits.sdk.android.DigitsAuthButton
+        android:id="@+id/auth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
